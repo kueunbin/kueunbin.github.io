@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+                body {
+                height: 100vh;
+                /*background:url(img2/공간_렌더링5.png) no-repeat center;*/
+                background-size: cover;
+                margin: 0px;
+                background-color: rgb(255, 155, 155);
+                }
+
+                #content1{
+                padding: 80px;
+                }
+
+                    #content1 ul{ /* 아이디(섹션 부분 콘텐츠 1로 이름 먼저 바꿔줘야함)인 경우 #을 사용 */
+                display:flex; 
+                list-style: none; /* 리스트 옆 동그라미 지우는 용도 */
+                padding : 0px;
+                margin-top: 100px;
+                }
+                #content1 li{ /* 오른쪽에 그레이색 선 */
+                    border-right: solid 1px gray; 
+                    padding:50px;
+                }
+                #content1 li:last-child{ /* 위로 인해 제작된 선 중에서 맨 오른쪽 아이 선 제거*/
+                    border: none;
+                }
+                #content1 dd{ /* 콘텐츠 섹션안의 dd부분의 마진 제거 */
+                    margin: 0px; 
+                }
+
+                ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 11%;
+                background-color: #f1f1f1;
+                position: fixed;
+                height: 100%;
+                overflow: auto;
+                }
+
+                li a {
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+                }
+
+                li a.active {
+                background-color: #000000;
+                color: white;
+                }
+
+                li a:hover:not(.active) {
+                background-color: #000000;
+                color: white;
+                }
+
+                #main_visual{
+                background-image: url("img2/공간_렌더링5_B.jpg");
+                padding: 350px;
+                color: white;
+                text-align: center;
+                background-size: auto;
+                background-repeat: no-repeat;
+                background-color: black;
+                background-position: 50% 50%;
+                background-size: cover;
+            }
+
+        </style>
+    </head>
+        <title>기말평가 - 포트폴리오, 자유주제</title>
+        <body>
+
+            <ul>
+                <li><a class="active" href="#">홈</a></li>
+                <li><a href="#">Content Design</a></li>
+                <li><a href="#">Content Planning</a></li>
+                <li><a href="#">3D Design</a></li>
+                <li><a href="#">Motion Graphics</a></li>
+            </ul>
+            <div id="main_visual">
+                <p>I'm tired</p> 
+                <h2>PORTFOLIO</h2>
+                <p>A year's track record</p>
+            </div>
+            <section id="content1">  <!--아래와 위의 섹션을 구분 짓기 위해서 아이디로 바꿈-->
+                <h3>ABOUT ME</h3>
+                <ul>
+                    <li>
+                    <img src="icon1.png"/>
+                        <dl>
+                          <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod tempor 
+                                incidi et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="icon2.png"/>
+                            <dl>
+                              <dt>Title goes here</dt>
+                                <dd>
+                                    onsectetur adipisicing elit, sedo eiusmod tempor 
+                                    incidi et dolorerserss eerhfre mag.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="icon3.png"/>
+                                <dl>
+                                  <dt>Title goes here</dt>
+                                    <dd>
+                                        onsectetur adipisicing elit, sedo eiusmod tempor 
+                                        incidi et dolorerserss eerhfre mag.
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <img src="icon4.png"/>
+                                    <dl>
+                                      <dt>Title goes here</dt>
+                                        <dd>
+                                            onsectetur adipisicing elit, sedo eiusmod tempor 
+                                            incidi et dolorerserss eerhfre mag.
+                                        </dd>
+                                    </dl>
+                                </li>
+                </ul>
+            </section>
+            <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+                <h1>네비게이션 세로 버전입니다!</h1>
+                </div>
+        </body>
+</html>

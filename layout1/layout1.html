@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout</title>
+        <meta charset="utf-8">
+        <style>
+            #wrap ul{}
+            header ul{}
+            #wrap>header>ul{}
+            #wrap{
+                min-width: 1000px; /*최소 화면 넓이*/
+                max-width: 1920px; /*최대 화면 넓이*/
+                margin: 0px auto;
+            }
+            header ul{
+                list-style: none; /* 리스트 스타일(동그라미)없애기*/
+                display: flex; /* 가로정렬할때 쓰기*/
+                margin: 13px 0px
+                
+            }
+            header li{
+                padding: 0px 10px;/* margin : 바깥여백 padding : 안쪽여백 ul에 잘못넣지않게 조심*/
+                border-right: solid 1px gray;
+            }
+            header li:last-child{
+                border: none;
+            }
+            header{
+                display: flex;
+                justify-content: space-between;/*양쪽 끝으로 여백주면서 정렬*/
+                padding: 5px 50px;
+            }
+            header h1{
+                margin: 0px;
+            }
+            header>div>img{
+                margin: 13px 0px;
+            }
+            nav ul{
+                list-style: none;
+                display: flex;
+            }
+            nav li{
+                padding: 0px 10px;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;/*<div>를 의미없이 쓰기 좋음(개체추가로 사용가능)*/
+                background-color: lightgray;
+                padding: 5px 50px;
+                }
+            nav h2{
+                margin: 14px 0px
+            }
+            #content>section:nth-child(1){background-color: #98f;}
+            #content>section:nth-child(2){background-color: #5d9;}
+            #content>section:nth-child(3){background-color: #f76;}
+            #content>section:nth-child(4){background-color: #ec5;}
+            #content>section>div{
+                display: flex;
+                justify-content: center;
+            }
+            #content>section>div>div{
+                margin: 0px 10px;
+            }
+            #content dt{
+                font-weight: bold;
+            }
+            #content dd{
+                margin: 0px;
+            }
+            h3{
+                margin: 0px;
+                margin-bottom: 30px;
+                color: white;
+                font-weight: normal;
+            }
+            section{
+                padding: 50px;
+            }
+            footer{
+                display: flex;
+                justify-content: space-between;
+                background-color: black;
+                color: white;
+                padding: 50px;
+            }
+            footer ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+            }
+            footer li{
+                padding: 0px 5px;
+            }
+            footer div:first-child li{
+                border-right: solid 1px lightgray; /*경계선*/
+            }
+            footer div:first-child li:last-child{
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1><img src="logo.png" /></h1>
+                <ul>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>WORKS</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                </ul>
+            <div><img src="zoom.png" /></h1></div>
+            </header>
+            <nav>
+                <h2>See Our Works</h2>
+                <ul>
+                    <li>web design</li>
+                    <li>icon</li>
+                    <li>web design</li>
+                    <li>web design</li>
+                </ul>
+                <div></div>
+            </nav>
+            <div id="content">
+                <section>
+                    <h3>Web design</h3> <!-- 두개로 나눠지지않는 제목이라 따로 작성 -->
+                    <div>
+                        <div>
+                            <img src="1.png" />
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="2.png" />
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Web design</h3> <!-- 두개로 나눠지지않는 제목이라 따로 작성 -->
+                    <div>
+                        <div>
+                            <img src="3.png" />
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="4.png" />
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Web design</h3> <!-- 두개로 나눠지지않는 제목이라 따로 작성 -->
+                    <div>
+                        <div>
+                            <img src="5.png" />
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="6.png" />
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Web design</h3> <!-- 두개로 나눠지지않는 제목이라 따로 작성 -->
+                    <div>
+                        <div>
+                            <img src="7.png" />
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="8.png" />
+                            <dl>
+                                <dt>프로젝트 제목</dt>
+                                <dd>프로젝트 내용</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+                <footer>
+                    <div>
+                        <ul>
+                            <li>home</li>
+                            <li>about</li>
+                            <li>services</li>
+                            <li>work</li>
+                        </ul>
+                        <p>copyright</p>
+                        <p>description</p>
+                    </div>
+                    <ul>
+                        <li><img src="icon1.png"></li>
+                        <li><img src="icon2.png"></li>
+                        <li><img src="icon3.png"></li>
+                        <li><img src="icon4.png"></li>
+                        <li><img src="icon5.png"></li>
+                        <li><img src="icon6.png"></li>
+                    </ul>
+                </footer>
+        </div>
+    </body>
+</html>

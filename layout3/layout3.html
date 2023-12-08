@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout3</title>
+        <meta charset="utf-8" />
+        <style>
+            #warp{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin: 0px auto;
+            }
+            body{
+                background-image: url("deco.png");
+            }
+            header ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+                font-size: 12px;
+            }
+            header li{
+                padding-right: 20px;
+            }
+            .short_line{
+                width: 25px;
+                border-top: solid 1px black;
+            }
+            #content{
+                display: flex; /*아이디는 #으로 불러오기해야함*/
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .content_card{
+                width: 310px;
+                background-color: white;
+                box-shadow: 2px 2px 2px gray;
+                margin: 20px;
+            }
+            .content_card h2{
+                margin-top: 0px;
+            }
+            .content_card>div:last-child{
+                padding: 20px;
+            }
+            .content_card>div:first-child{
+                position: relative /*관계적인*/
+                /* relative인 부모는 absolute인 자식의 기준이 된다*/
+            }
+            .content_card img{
+                display: block; /* 이미지도 일종의 글자로 취급되면서 소문자를 위해 사용되는 빈칸을 없앨때 사용 */
+            }
+            .content_card>div:last-child>div:nth-child(2){
+                color: gray;
+            }
+            .category{
+                background-color:  black;
+                color: white;
+                position: absolute;
+                /* 위치지정: 절대적인 */
+                left: 0px;
+                bottom: 0px;
+            }
+            .long_line{
+                border-top: dotted 1px gray;
+                margin: 10px 0px;
+            }
+            .content_card p{
+                margin: 0px;
+            }
+            footer ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+            }
+            footer li{
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>Gridly.</h1>
+                <div class="short_line"> </div>
+                <ul>
+                    <li>home</li>
+                    <li>digital design</li>
+                    <li>web design</li>
+                </ul>
+                <div class="short_line"> </div>
+            </header>
+            <div id="content">
+                <section class="content_card">
+                    <div>
+                        <img src="img1.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img2.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img4.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img5.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img6.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img7.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img8.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img9.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img10.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img11.png" />
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p> 
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+            </div>
+            <footer><div class="short_line"></div>
+            <ul>
+                <li><img src="icon1.png" /></li>
+                <li><img src="icon2.png" /></li>
+                <li><img src="icon3.png" /></li>
+                <li><img src="icon4.png" /></li>
+            </ul>
+            <div class="short_line"></div>
+            <p>copryadsan</p>
+        </footer>
+        </div>
+    </body>
+</html>

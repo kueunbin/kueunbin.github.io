@@ -8,7 +8,7 @@
         div{
             color:rgb(175, 62, 49);
             color: beige; 
-            color:aqua}
+            color:rgb(32, 104, 54)}
         /* css */
     </style>
         <!-- html 주석-->
@@ -77,5 +77,168 @@
         first line, first line,first line,first line,first line,
         first line, first line,first line,first line,first line,
     </div>
+
+    <style>
+        #d6 div:first-child{
+            color : rgb(144, 0, 0);
+        }
+        #d6 div:nth-child(2){
+            color :blue
+        }
+        #d6 div:last-child{
+            color :rgb(237, 101, 255)
+        }
+    </style>
+
+    <div id="d6">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+
+        <style>
+            /* :link, :visitted :hover :active :focus */
+            a:link{ /*링크가 있다면*/
+                color:aqua;
+            }    
+            a:visited{ /*방문한적이 있다면*/
+                color:rgb(160, 121, 59);
+            }    
+            a:hover{ /*마우스를 올리면*/
+                color:rgb(59, 50, 183);
+            }    
+            a:active{ /*마우스로 누르면*/
+                color:rgb(218, 109, 109);
+            }
+            a:focus{ /*마우스로 누르면*/
+                color:rgb(49, 157, 98);
+            }
+        </style>
+        <a href="http://www.naver.com">네이버</a>
+    </div>
+
+    <style>
+        #d7>span{/*자식 요소 선택자*/
+            font-size: 40px;}
+            s
+        #d7>span{/*하위 요소 선택자*/
+            font-style: italic;}
+
+        #d7>div>span{/*하위 요소 선택자*/
+
+            font-weight: bold;}  
+    </style>
+
+    <div id="d7">
+        <span>span1</span>
+        <div>
+            <span>span2</span>
+        </div>
+    </div>
+
+    <style>
+        body,div,span{ font-size: 12px;} /*모두 묶기*/
+    </style>
+
+    <style>
+        #d8{
+            width: 200px;
+            height: 200px;
+            border: solid 2px red;
+            border-left: solid 2px rgb(221, 76, 199);
+            border-right: solid 2px rgb(255, 237, 34);
+            border-top: solid 2px rgb(16, 24, 255);
+            border-bottom: solid 2px black;
+
+            margin: 50px;
+            margin: 50px 100px; /* 상하 좌우*/
+            margin: 0px 50px 100px 150px; /* 상우 하좌*/
+            /* 위에서부터 시계방향 */
+            margin-left: 0px;
+            margin-right: 50px;
+            margin-top: 100px;
+            margin-bottom: 150px;
+
+            padding: 0px;
+            padding: 0px 50px;
+            padding: 0px 50px 100px 150px;
+            /* 위에서부터 시계방향 */
+            padding-left: 0px;
+            padding-right: 50px;
+            padding-top: 100px;
+            padding-bottom: 150px;
+
+        }
+    </style>
+    <div id="d8"> box model</div>
+
+    <style>
+        #d9{
+            position: absolute;
+            left : 100px;
+            top : 90px;
+        }
+        #d10
+        {
+            position: relative; /*관계형*/
+            /*relative인 부모는,absolute 자식의 기준이 된다*/ 
+        }
+    </style>
+    <div id="d10">
+        <div id="d9">adsolute</div>
+    </div>
+    <style>
+        #d11{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+        <div id="d11">fixed</div>
+        <style>
+            #d12{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 60px;
+                font-weight: bold;
+                font-style: italic;
+                text-align: center;
+                margin: 0px;
+                width: 300px;
+            }
+        </style>
+        <div id="d12">fontfamily</div>
+        <style>
+            #d13{
+                letter-spacing: 80px;
+                line-height: 80px;
+            }
+            </style>
+        <div id="d13">letter spacing, line height</div>
+        <style>
+            #d14{
+                white-space:pre ;
+            }
+        </style>
+        <div id="d14">
+            a    b     c 
+            d    e     f
+        </div>
+        <style>
+            #d15{
+                min-width: 400px;
+                max-width: 800px;
+                border-radius: 5px;
+                text-shadow: 1px 1px 1px rgb(9, 82, 27);
+                /*가로이동, 세로이동, 번짐, 색상*/ 
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100px;
+            }
+        </style>
+        <div id="d15">min max widtmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin
+             max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin 
+             max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin 
+             max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin
+             max widthmin max widthmin max widthmin max widthh</div>
     </body>
-    </html>
+</html>
